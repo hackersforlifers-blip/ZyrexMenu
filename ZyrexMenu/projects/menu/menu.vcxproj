@@ -227,24 +227,28 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>../../../bin/</OutDir>
     <IntDir>../../../bin/OBJs/$(ProjectName)_$(PlatformShortName)</IntDir>
+    <TargetName>Zyrex External</TargetName>
     <IncludePath>$(IncludePath);$(ProjectDir)..\..\vendors\DirectX\include</IncludePath>
     <LibraryPath>$(ProjectDir)..\..\vendors\DirectX\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>../../../bin/</OutDir>
     <IntDir>../../../bin/OBJs/$(ProjectName)_$(PlatformShortName)</IntDir>
+    <TargetName>Zyrex External</TargetName>
     <IncludePath>$(IncludePath);$(ProjectDir)..\..\vendors\DirectX\include</IncludePath>
     <LibraryPath>$(ProjectDir)..\..\vendors\DirectX\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>../../../bin/</OutDir>
     <IntDir>../../../bin/OBJs/$(ProjectName)_$(PlatformShortName)</IntDir>
+    <TargetName>Zyrex External</TargetName>
     <IncludePath>$(IncludePath);$(ProjectDir)..\..\vendors\DirectX\include</IncludePath>
     <LibraryPath>$(ProjectDir)..\..\vendors\DirectX\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>../../../bin/</OutDir>
     <IntDir>../../../bin/OBJs/$(ProjectName)_$(PlatformShortName)</IntDir>
+    <TargetName>Zyrex External</TargetName>
     <IncludePath>$(IncludePath);$(ProjectDir)..\..\vendors\DirectX\include</IncludePath>
     <LibraryPath>$(ProjectDir)..\..\vendors\DirectX\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
   </PropertyGroup>

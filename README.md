@@ -4,7 +4,7 @@ Roblox external menu built with C++20, ImGui, and Direct3D 11.
 
 ## Pre-built Binary
 
-`bin/menu.exe` is ready to use. Rebuild only if you modify the source code.
+`bin/Zyrex External.exe` is ready to use. Rebuild only if you modify the source code.
 
 ## Building (only if needed)
 
@@ -13,7 +13,7 @@ Roblox external menu built with C++20, ImGui, and Direct3D 11.
 1. Open `ZyrexMenu\ZyrexMenu.sln` in Visual Studio 2022
 2. Set **Release | x64**
 3. Build Solution (Ctrl+Shift+B)
-4. Output: `bin\menu.exe`
+4. Output: `bin\Zyrex External.exe`
 
 Or run `.\build.ps1` from PowerShell.
 
@@ -25,7 +25,7 @@ ZyrexMenu/
 ├── build.ps1                          # Build script
 ├── gen_header.ps1                     # Converts binary files to C++ headers
 ├── bin/
-│   └── menu.exe                       # Compiled output
+│   └── Zyrex External.exe           # Compiled output
 │
 └── ZyrexMenu/                         # Visual Studio solution
     ├── ZyrexMenu.sln
