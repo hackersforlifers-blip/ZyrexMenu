@@ -35,18 +35,18 @@
     <ClCompile Include="..\shared\Window.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="src\memory\memory.cpp" />
-    <ClCompile Include="src\sdk\sdk.cpp" />
-    <ClCompile Include="src\game\game.cpp" />
-    <ClCompile Include="src\game\rescan\rescan.cpp" />
-    <ClCompile Include="src\cache\cache.cpp" />
-    <ClCompile Include="src\cache\bodyparts\bodyparts.cpp" />
-    <ClCompile Include="src\cache\custom_entities\custom_entities.cpp" />
-    <ClCompile Include="src\menu\keybind\keybind.cpp" />
-    <ClCompile Include="src\gamesupport\gamesupport.cpp" />
-    <ClCompile Include="src\features\football\football.cpp" />
-    <ClCompile Include="src\features\config\config.cpp" />
-    <ClCompile Include="src\Offsets\AutoUpdater.cpp" />
+    <ClCompile Include="source_code\memory\memory.cpp" />
+    <ClCompile Include="source_code\sdk\sdk.cpp" />
+    <ClCompile Include="source_code\game\game.cpp" />
+    <ClCompile Include="source_code\game\rescan\rescan.cpp" />
+    <ClCompile Include="source_code\cache\cache.cpp" />
+    <ClCompile Include="source_code\cache\bodyparts\bodyparts.cpp" />
+    <ClCompile Include="source_code\cache\custom_entities\custom_entities.cpp" />
+    <ClCompile Include="source_code\menu\keybind\keybind.cpp" />
+    <ClCompile Include="source_code\gamesupport\gamesupport.cpp" />
+    <ClCompile Include="source_code\features\football\football.cpp" />
+    <ClCompile Include="source_code\features\config\config.cpp" />
+    <ClCompile Include="source_code\Offsets\AutoUpdater.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\shared\Application.h" />
@@ -103,73 +103,73 @@
     <ClInclude Include="patrick_glb.h" />
     <ClInclude Include="ext\json.hpp" />
     <ClInclude Include="ext\include.hxx" />
-    <ClInclude Include="src\settings.h" />
-    <ClInclude Include="src\memory\memory.h" />
-    <ClInclude Include="src\Offsets\Offsets.hpp" />
-    <ClInclude Include="src\Offsets\OffsetLoader.hpp" />
-    <ClInclude Include="src\Offsets\FFlags.hpp" />
-    <ClInclude Include="src\Offsets\AutoUpdater.h" />
-    <ClInclude Include="src\sdk\sdk.h" />
-    <ClInclude Include="src\sdk\math\math.h" />
-    <ClInclude Include="src\game\game.h" />
-    <ClInclude Include="src\game\rescan\rescan.h" />
-    <ClInclude Include="src\cache\cache.h" />
-    <ClInclude Include="src\cache\bodyparts\bodyparts.h" />
-    <ClInclude Include="src\cache\custom_entities\custom_entities.h" />
-    <ClInclude Include="src\render\render.h" />
-    <ClInclude Include="src\render\textures\texture.h" />
-    <ClInclude Include="src\render\3d\main_api.hpp" />
-    <ClInclude Include="src\render\3d\texture\texture_cache.hpp" />
-    <ClInclude Include="src\render\3d\parsers\obj_parser.hpp" />
-    <ClInclude Include="src\wallcheck\wallcheck.h" />
-    <ClInclude Include="src\wallcheck\obb.h" />
-    <ClInclude Include="src\menu\menu.h" />
-    <ClInclude Include="src\menu\keybind\keybind.h" />
-    <ClInclude Include="src\menu\rardar\radar.h" />
-    <ClInclude Include="src\features\aimbot\aimbot.h" />
-    <ClInclude Include="src\features\silentaim\silentaim.h" />
-    <ClInclude Include="src\features\triggerbot\triggerbot.h" />
-    <ClInclude Include="src\features\esp\esp.h" />
-    <ClInclude Include="src\features\esp\parser\meshparser.h" />
-    <ClInclude Include="src\features\config\config.h" />
-    <ClInclude Include="src\features\movement\movement.h" />
-    <ClInclude Include="src\features\movement\fly\fly.h" />
-    <ClInclude Include="src\features\movement\speed\speed.h" />
-    <ClInclude Include="src\features\movement\jump\jump.h" />
-    <ClInclude Include="src\features\movement\tickrate\tickrate.h" />
-    <ClInclude Include="src\features\movement\gravity\gravity.h" />
-    <ClInclude Include="src\features\lighting\fog\fog.h" />
-    <ClInclude Include="src\features\lighting\shadows\shadows.h" />
-    <ClInclude Include="src\features\lighting\clocktime\clocktime.h" />
-    <ClInclude Include="src\features\lighting\exposure\exposure.h" />
-    <ClInclude Include="src\features\lighting\skybox\skybox.h" />
-    <ClInclude Include="src\features\rage\desync\desync.h" />
-    <ClInclude Include="src\features\rage\magicbullet\magicbullet.h" />
-    <ClInclude Include="src\features\rage\noclip\noclip.h" />
-    <ClInclude Include="src\features\rage\spin360\spin360.h" />
-    <ClInclude Include="src\features\rage\orbit\orbit.h" />
-    <ClInclude Include="src\features\rage\rapidfire\rapidfire.h" />
-    <ClInclude Include="src\features\rage\hitsound\hitsounds.h" />
-    <ClInclude Include="src\features\rage\hittracers\hittracers.h" />
-    <ClInclude Include="src\features\rage\hbe\hitbox_expander.h" />
-    <ClInclude Include="src\features\rage\hipheight\hipheight.h" />
-    <ClInclude Include="src\features\exploits\headless\headless.h" />
-    <ClInclude Include="src\features\exploits\korblox\korblox.h" />
-    <ClInclude Include="src\features\exploits\antiafk\antiafk.h" />
-    <ClInclude Include="src\features\exploits\freezeplayer\freezeplayer.h" />
-    <ClInclude Include="src\features\exploits\client\fpscaps.h" />
-    <ClInclude Include="src\features\lua_executor\lua_executor.h" />
-    <ClInclude Include="src\features\infinite_ammo\infinite_ammo.h" />
-    <ClInclude Include="src\features\menu\console\console.h" />
-    <ClInclude Include="src\features\explorer\explorer.h" />
-    <ClInclude Include="src\features\explorer\globals.h" />
-    <ClInclude Include="src\features\avatarmanager\avatarmanager.h" />
-    <ClInclude Include="src\gamesupport\gamesupport.h" />
-    <ClInclude Include="src\gamesupport\LumberTycoon2\lt2.h" />
-    <ClInclude Include="src\features\football\football.h" />
+    <ClInclude Include="source_code\settings.h" />
+    <ClInclude Include="source_code\memory\memory.h" />
+    <ClInclude Include="source_code\Offsets\Offsets.hpp" />
+    <ClInclude Include="source_code\Offsets\OffsetLoader.hpp" />
+    <ClInclude Include="source_code\Offsets\FFlags.hpp" />
+    <ClInclude Include="source_code\Offsets\AutoUpdater.h" />
+    <ClInclude Include="source_code\sdk\sdk.h" />
+    <ClInclude Include="source_code\sdk\math\math.h" />
+    <ClInclude Include="source_code\game\game.h" />
+    <ClInclude Include="source_code\game\rescan\rescan.h" />
+    <ClInclude Include="source_code\cache\cache.h" />
+    <ClInclude Include="source_code\cache\bodyparts\bodyparts.h" />
+    <ClInclude Include="source_code\cache\custom_entities\custom_entities.h" />
+    <ClInclude Include="source_code\render\render.h" />
+    <ClInclude Include="source_code\render\textures\texture.h" />
+    <ClInclude Include="source_code\render\3d\main_api.hpp" />
+    <ClInclude Include="source_code\render\3d\texture\texture_cache.hpp" />
+    <ClInclude Include="source_code\render\3d\parsers\obj_parser.hpp" />
+    <ClInclude Include="source_code\wallcheck\wallcheck.h" />
+    <ClInclude Include="source_code\wallcheck\obb.h" />
+    <ClInclude Include="source_code\menu\menu.h" />
+    <ClInclude Include="source_code\menu\keybind\keybind.h" />
+    <ClInclude Include="source_code\menu\rardar\radar.h" />
+    <ClInclude Include="source_code\features\aimbot\aimbot.h" />
+    <ClInclude Include="source_code\features\silentaim\silentaim.h" />
+    <ClInclude Include="source_code\features\triggerbot\triggerbot.h" />
+    <ClInclude Include="source_code\features\esp\esp.h" />
+    <ClInclude Include="source_code\features\esp\parser\meshparser.h" />
+    <ClInclude Include="source_code\features\config\config.h" />
+    <ClInclude Include="source_code\features\movement\movement.h" />
+    <ClInclude Include="source_code\features\movement\fly\fly.h" />
+    <ClInclude Include="source_code\features\movement\speed\speed.h" />
+    <ClInclude Include="source_code\features\movement\jump\jump.h" />
+    <ClInclude Include="source_code\features\movement\tickrate\tickrate.h" />
+    <ClInclude Include="source_code\features\movement\gravity\gravity.h" />
+    <ClInclude Include="source_code\features\lighting\fog\fog.h" />
+    <ClInclude Include="source_code\features\lighting\shadows\shadows.h" />
+    <ClInclude Include="source_code\features\lighting\clocktime\clocktime.h" />
+    <ClInclude Include="source_code\features\lighting\exposure\exposure.h" />
+    <ClInclude Include="source_code\features\lighting\skybox\skybox.h" />
+    <ClInclude Include="source_code\features\rage\desync\desync.h" />
+    <ClInclude Include="source_code\features\rage\magicbullet\magicbullet.h" />
+    <ClInclude Include="source_code\features\rage\noclip\noclip.h" />
+    <ClInclude Include="source_code\features\rage\spin360\spin360.h" />
+    <ClInclude Include="source_code\features\rage\orbit\orbit.h" />
+    <ClInclude Include="source_code\features\rage\rapidfire\rapidfire.h" />
+    <ClInclude Include="source_code\features\rage\hitsound\hitsounds.h" />
+    <ClInclude Include="source_code\features\rage\hittracers\hittracers.h" />
+    <ClInclude Include="source_code\features\rage\hbe\hitbox_expander.h" />
+    <ClInclude Include="source_code\features\rage\hipheight\hipheight.h" />
+    <ClInclude Include="source_code\features\exploits\headless\headless.h" />
+    <ClInclude Include="source_code\features\exploits\korblox\korblox.h" />
+    <ClInclude Include="source_code\features\exploits\antiafk\antiafk.h" />
+    <ClInclude Include="source_code\features\exploits\freezeplayer\freezeplayer.h" />
+    <ClInclude Include="source_code\features\exploits\client\fpscaps.h" />
+    <ClInclude Include="source_code\features\lua_executor\lua_executor.h" />
+    <ClInclude Include="source_code\features\infinite_ammo\infinite_ammo.h" />
+    <ClInclude Include="source_code\features\menu\console\console.h" />
+    <ClInclude Include="source_code\features\explorer\explorer.h" />
+    <ClInclude Include="source_code\features\explorer\globals.h" />
+    <ClInclude Include="source_code\features\avatarmanager\avatarmanager.h" />
+    <ClInclude Include="source_code\gamesupport\gamesupport.h" />
+    <ClInclude Include="source_code\gamesupport\LumberTycoon2\lt2.h" />
+    <ClInclude Include="source_code\features\football\football.h" />
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="src\memory\luck.asm" />
+    <MASM Include="source_code\memory\luck.asm" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -260,7 +260,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/FS /FI"$(ProjectDir)force_inline.h" %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)ext;$(ProjectDir);$(ProjectDir)ext\zstd;$(ProjectDir)ext\blake3;$(ProjectDir)ext\xxhash;$(ProjectDir)ext\json;$(ProjectDir)ext\dicons;$(ProjectDir)ext\font;$(ProjectDir)ext\font\config;$(ProjectDir)ext\imgui;$(ProjectDir)ext\imgui\include;$(ProjectDir)ext\Clipper2Lib\include;$(ProjectDir)..\..\projects\shared;$(ProjectDir)..\..\vendors\FreeType\include;$(ProjectDir)..\..\vendors;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)source_code;$(ProjectDir)ext;$(ProjectDir);$(ProjectDir)ext\zstd;$(ProjectDir)ext\blake3;$(ProjectDir)ext\xxhash;$(ProjectDir)ext\json;$(ProjectDir)ext\dicons;$(ProjectDir)ext\font;$(ProjectDir)ext\font\config;$(ProjectDir)ext\imgui;$(ProjectDir)ext\imgui\include;$(ProjectDir)ext\Clipper2Lib\include;$(ProjectDir)..\..\projects\shared;$(ProjectDir)..\..\vendors\FreeType\include;$(ProjectDir)..\..\vendors;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <Optimization>Disabled</Optimization>
     </ClCompile>
@@ -285,7 +285,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/FS /FI"$(ProjectDir)force_inline.h" %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)ext;$(ProjectDir);$(ProjectDir)ext\zstd;$(ProjectDir)ext\blake3;$(ProjectDir)ext\xxhash;$(ProjectDir)ext\json;$(ProjectDir)ext\dicons;$(ProjectDir)ext\font;$(ProjectDir)ext\font\config;$(ProjectDir)ext\imgui;$(ProjectDir)ext\imgui\include;$(ProjectDir)ext\Clipper2Lib\include;$(ProjectDir)..\..\projects\shared;$(ProjectDir)..\..\vendors\FreeType\include;$(ProjectDir)..\..\vendors;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)source_code;$(ProjectDir)ext;$(ProjectDir);$(ProjectDir)ext\zstd;$(ProjectDir)ext\blake3;$(ProjectDir)ext\xxhash;$(ProjectDir)ext\json;$(ProjectDir)ext\dicons;$(ProjectDir)ext\font;$(ProjectDir)ext\font\config;$(ProjectDir)ext\imgui;$(ProjectDir)ext\imgui\include;$(ProjectDir)ext\Clipper2Lib\include;$(ProjectDir)..\..\projects\shared;$(ProjectDir)..\..\vendors\FreeType\include;$(ProjectDir)..\..\vendors;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -309,7 +309,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/FS /FI"$(ProjectDir)force_inline.h" %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)src\features;$(ProjectDir)ext;$(ProjectDir);$(ProjectDir)ext\zstd;$(ProjectDir)ext\blake3;$(ProjectDir)ext\xxhash;$(ProjectDir)ext\json;$(ProjectDir)ext\dicons;$(ProjectDir)ext\font;$(ProjectDir)ext\font\config;$(ProjectDir)ext\imgui;$(ProjectDir)ext\imgui\include;$(ProjectDir)ext\Clipper2Lib\include;$(ProjectDir)..\..\projects\shared;$(ProjectDir)..\..\vendors;$(ProjectDir)..\..\vendors\FreeType\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)source_code;$(ProjectDir)source_code\features;$(ProjectDir)ext;$(ProjectDir);$(ProjectDir)ext\zstd;$(ProjectDir)ext\blake3;$(ProjectDir)ext\xxhash;$(ProjectDir)ext\json;$(ProjectDir)ext\dicons;$(ProjectDir)ext\font;$(ProjectDir)ext\font\config;$(ProjectDir)ext\imgui;$(ProjectDir)ext\imgui\include;$(ProjectDir)ext\Clipper2Lib\include;$(ProjectDir)..\..\projects\shared;$(ProjectDir)..\..\vendors;$(ProjectDir)..\..\vendors\FreeType\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <Optimization>Disabled</Optimization>
     </ClCompile>
@@ -334,7 +334,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <DebugInformationFormat>None</DebugInformationFormat>
       <AdditionalOptions>/FS /FI"$(ProjectDir)force_inline.h" %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)src\features;$(ProjectDir)ext;$(ProjectDir);$(ProjectDir)ext\zstd;$(ProjectDir)ext\blake3;$(ProjectDir)ext\xxhash;$(ProjectDir)ext\json;$(ProjectDir)ext\dicons;$(ProjectDir)ext\font;$(ProjectDir)ext\font\config;$(ProjectDir)ext\imgui;$(ProjectDir)ext\imgui\include;$(ProjectDir)ext\Clipper2Lib\include;$(ProjectDir)..\..\projects\shared;$(ProjectDir)..\..\vendors;$(ProjectDir)..\..\vendors\FreeType\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)source_code;$(ProjectDir)source_code\features;$(ProjectDir)ext;$(ProjectDir);$(ProjectDir)ext\zstd;$(ProjectDir)ext\blake3;$(ProjectDir)ext\xxhash;$(ProjectDir)ext\json;$(ProjectDir)ext\dicons;$(ProjectDir)ext\font;$(ProjectDir)ext\font\config;$(ProjectDir)ext\imgui;$(ProjectDir)ext\imgui\include;$(ProjectDir)ext\Clipper2Lib\include;$(ProjectDir)..\..\projects\shared;$(ProjectDir)..\..\vendors;$(ProjectDir)..\..\vendors\FreeType\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
