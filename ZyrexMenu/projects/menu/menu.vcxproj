@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\shared\Application.cpp" />
+    <ClCompile Include="..\shared\Console.cpp" />
+    <ClCompile Include="..\shared\Direct3D11.cpp" />
+    <ClCompile Include="..\shared\ImGui\addons\imgui_addons.cpp" />
+    <ClCompile Include="..\shared\ImGui\backends\imgui_impl_dx11.cpp" />
+    <ClCompile Include="..\shared\ImGui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\shared\ImGui\imgui.cpp" />
+    <ClCompile Include="..\shared\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="..\shared\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="..\shared\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="..\shared\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="..\shared\ImGui\misc\imgui_freetype.cpp" />
+    <ClCompile Include="..\shared\Texture.cpp" />
+    <ClCompile Include="..\shared\Window.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="src\memory\memory.cpp" />
+    <ClCompile Include="src\sdk\sdk.cpp" />
+    <ClCompile Include="src\game\game.cpp" />
+    <ClCompile Include="src\game\rescan\rescan.cpp" />
+    <ClCompile Include="src\cache\cache.cpp" />
+    <ClCompile Include="src\cache\bodyparts\bodyparts.cpp" />
+    <ClCompile Include="src\cache\custom_entities\custom_entities.cpp" />
+    <ClCompile Include="src\menu\keybind\keybind.cpp" />
+    <ClCompile Include="src\gamesupport\gamesupport.cpp" />
+    <ClCompile Include="src\features\football\football.cpp" />
+    <ClCompile Include="src\features\config\config.cpp" />
+    <ClCompile Include="src\Offsets\AutoUpdater.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\Application.h" />
+    <ClInclude Include="..\shared\Console.h" />
+    <ClInclude Include="..\shared\Direct3D11.h" />
+    <ClInclude Include="..\shared\Globals.h" />
+    <ClInclude Include="..\shared\ImGui\addons\imgui_addons.h" />
+    <ClInclude Include="..\shared\ImGui\backends\imgui_impl_dx11.h" />
+    <ClInclude Include="..\shared\ImGui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="..\shared\ImGui\imconfig.h" />
+    <ClInclude Include="..\shared\ImGui\imgui.h" />
+    <ClInclude Include="..\shared\ImGui\imgui_internal.h" />
+    <ClInclude Include="..\shared\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="..\shared\ImGui\imstb_textedit.h" />
+    <ClInclude Include="..\shared\ImGui\imstb_truetype.h" />
+    <ClInclude Include="..\shared\ImGui\misc\imgui_freetype.h" />
+    <ClInclude Include="..\shared\Resources\fonts\font_cascadia_mono_pl_regular.h" />
+    <ClInclude Include="..\shared\Resources\fonts\font_exo2_medium.h" />
+    <ClInclude Include="..\shared\Resources\fonts\font_inter_medium.h" />
+    <ClInclude Include="..\shared\Resources\fonts\font_inter_semibold.h" />
+    <ClInclude Include="..\shared\Resources\fonts\font_montserrat_medium.h" />
+    <ClInclude Include="..\shared\Resources\fonts\font_poppins_medium.h" />
+    <ClInclude Include="..\shared\Resources\fonts\font_sf_pro_display_medium.h" />
+    <ClInclude Include="..\shared\Resources\fonts\font_ubuntu_medium.h" />
+    <ClInclude Include="..\shared\Resources\fonts\font_ubuntu_regular.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_clear.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_click.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_clock.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_code.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_crime.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_cursor.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_evil.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_eye.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_globe.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_knife.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_location.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_misc.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_objects.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_open.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_palette.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_play.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_pulse.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_running.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_save.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_settings.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_target.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_verified.h" />
+    <ClInclude Include="..\shared\Resources\textures\menu\image_wrench.h" />
+    <ClInclude Include="..\shared\Texture.h" />
+    <ClInclude Include="..\shared\Window.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="TextEditor.h" />
+    <ClInclude Include="GLBPreview.h" />
+    <ClInclude Include="patrick_glb.h" />
+    <ClInclude Include="ext\json.hpp" />
+    <ClInclude Include="ext\include.hxx" />
+    <ClInclude Include="src\settings.h" />
+    <ClInclude Include="src\memory\memory.h" />
+    <ClInclude Include="src\Offsets\Offsets.hpp" />
+    <ClInclude Include="src\Offsets\OffsetLoader.hpp" />
+    <ClInclude Include="src\Offsets\FFlags.hpp" />
+    <ClInclude Include="src\Offsets\AutoUpdater.h" />
+    <ClInclude Include="src\sdk\sdk.h" />
+    <ClInclude Include="src\sdk\math\math.h" />
+    <ClInclude Include="src\game\game.h" />
+    <ClInclude Include="src\game\rescan\rescan.h" />
+    <ClInclude Include="src\cache\cache.h" />
+    <ClInclude Include="src\cache\bodyparts\bodyparts.h" />
+    <ClInclude Include="src\cache\custom_entities\custom_entities.h" />
+    <ClInclude Include="src\render\render.h" />
+    <ClInclude Include="src\render\textures\texture.h" />
+    <ClInclude Include="src\render\3d\main_api.hpp" />
+    <ClInclude Include="src\render\3d\texture\texture_cache.hpp" />
+    <ClInclude Include="src\render\3d\parsers\obj_parser.hpp" />
+    <ClInclude Include="src\wallcheck\wallcheck.h" />
+    <ClInclude Include="src\wallcheck\obb.h" />
+    <ClInclude Include="src\menu\menu.h" />
+    <ClInclude Include="src\menu\keybind\keybind.h" />
+    <ClInclude Include="src\menu\rardar\radar.h" />
+    <ClInclude Include="src\features\aimbot\aimbot.h" />
+    <ClInclude Include="src\features\silentaim\silentaim.h" />
+    <ClInclude Include="src\features\triggerbot\triggerbot.h" />
+    <ClInclude Include="src\features\esp\esp.h" />
+    <ClInclude Include="src\features\esp\parser\meshparser.h" />
+    <ClInclude Include="src\features\config\config.h" />
+    <ClInclude Include="src\features\movement\movement.h" />
+    <ClInclude Include="src\features\movement\fly\fly.h" />
+    <ClInclude Include="src\features\movement\speed\speed.h" />
+    <ClInclude Include="src\features\movement\jump\jump.h" />
+    <ClInclude Include="src\features\movement\tickrate\tickrate.h" />
+    <ClInclude Include="src\features\movement\gravity\gravity.h" />
+    <ClInclude Include="src\features\lighting\fog\fog.h" />
+    <ClInclude Include="src\features\lighting\shadows\shadows.h" />
+    <ClInclude Include="src\features\lighting\clocktime\clocktime.h" />
+    <ClInclude Include="src\features\lighting\exposure\exposure.h" />
+    <ClInclude Include="src\features\lighting\skybox\skybox.h" />
+    <ClInclude Include="src\features\rage\desync\desync.h" />
+    <ClInclude Include="src\features\rage\magicbullet\magicbullet.h" />
+    <ClInclude Include="src\features\rage\noclip\noclip.h" />
+    <ClInclude Include="src\features\rage\spin360\spin360.h" />
+    <ClInclude Include="src\features\rage\orbit\orbit.h" />
+    <ClInclude Include="src\features\rage\rapidfire\rapidfire.h" />
+    <ClInclude Include="src\features\rage\hitsound\hitsounds.h" />
+    <ClInclude Include="src\features\rage\hittracers\hittracers.h" />
+    <ClInclude Include="src\features\rage\hbe\hitbox_expander.h" />
+    <ClInclude Include="src\features\rage\hipheight\hipheight.h" />
+    <ClInclude Include="src\features\exploits\headless\headless.h" />
+    <ClInclude Include="src\features\exploits\korblox\korblox.h" />
+    <ClInclude Include="src\features\exploits\antiafk\antiafk.h" />
+    <ClInclude Include="src\features\exploits\freezeplayer\freezeplayer.h" />
+    <ClInclude Include="src\features\exploits\client\fpscaps.h" />
+    <ClInclude Include="src\features\lua_executor\lua_executor.h" />
+    <ClInclude Include="src\features\infinite_ammo\infinite_ammo.h" />
+    <ClInclude Include="src\features\menu\console\console.h" />
+    <ClInclude Include="src\features\explorer\explorer.h" />
+    <ClInclude Include="src\features\explorer\globals.h" />
+    <ClInclude Include="src\features\avatarmanager\avatarmanager.h" />
+    <ClInclude Include="src\gamesupport\gamesupport.h" />
+    <ClInclude Include="src\gamesupport\LumberTycoon2\lt2.h" />
+    <ClInclude Include="src\features\football\football.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="src\memory\luck.asm" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{da794ee0-e3a6-49a2-b7d8-97f7b1d56987}</ProjectGuid>
+    <RootNamespace>menu</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../../bin/</OutDir>
+    <IntDir>../../../bin/OBJs/$(ProjectName)_$(PlatformShortName)</IntDir>
+    <IncludePath>$(IncludePath);$(ProjectDir)..\..\vendors\DirectX\include</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\vendors\DirectX\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../../bin/</OutDir>
+    <IntDir>../../../bin/OBJs/$(ProjectName)_$(PlatformShortName)</IntDir>
+    <IncludePath>$(IncludePath);$(ProjectDir)..\..\vendors\DirectX\include</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\vendors\DirectX\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../../../bin/</OutDir>
+    <IntDir>../../../bin/OBJs/$(ProjectName)_$(PlatformShortName)</IntDir>
+    <IncludePath>$(IncludePath);$(ProjectDir)..\..\vendors\DirectX\include</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\vendors\DirectX\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../../../bin/</OutDir>
+    <IntDir>../../../bin/OBJs/$(ProjectName)_$(PlatformShortName)</IntDir>
+    <IncludePath>$(IncludePath);$(ProjectDir)..\..\vendors\DirectX\include</IncludePath>
+    <LibraryPath>$(ProjectDir)..\..\vendors\DirectX\lib\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;NCONSOLE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/FS /FI"$(ProjectDir)force_inline.h" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)ext;$(ProjectDir);$(ProjectDir)ext\zstd;$(ProjectDir)ext\blake3;$(ProjectDir)ext\xxhash;$(ProjectDir)ext\json;$(ProjectDir)ext\dicons;$(ProjectDir)ext\font;$(ProjectDir)ext\font\config;$(ProjectDir)ext\imgui;$(ProjectDir)ext\imgui\include;$(ProjectDir)ext\Clipper2Lib\include;$(ProjectDir)..\..\projects\shared;$(ProjectDir)..\..\vendors\FreeType\include;$(ProjectDir)..\..\vendors;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\vendors\FreeType\lib\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <MASM>
+      <UseSafeExceptionHandlers>true</UseSafeExceptionHandlers>
+    </MASM>
+  
+</ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;NCONSOLE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/FS /FI"$(ProjectDir)force_inline.h" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)ext;$(ProjectDir);$(ProjectDir)ext\zstd;$(ProjectDir)ext\blake3;$(ProjectDir)ext\xxhash;$(ProjectDir)ext\json;$(ProjectDir)ext\dicons;$(ProjectDir)ext\font;$(ProjectDir)ext\font\config;$(ProjectDir)ext\imgui;$(ProjectDir)ext\imgui\include;$(ProjectDir)ext\Clipper2Lib\include;$(ProjectDir)..\..\projects\shared;$(ProjectDir)..\..\vendors\FreeType\include;$(ProjectDir)..\..\vendors;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\vendors\FreeType\lib\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <MASM>
+      <UseSafeExceptionHandlers>true</UseSafeExceptionHandlers>
+    </MASM>
+  
+</ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;NCONSOLE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/FS /FI"$(ProjectDir)force_inline.h" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)src\features;$(ProjectDir)ext;$(ProjectDir);$(ProjectDir)ext\zstd;$(ProjectDir)ext\blake3;$(ProjectDir)ext\xxhash;$(ProjectDir)ext\json;$(ProjectDir)ext\dicons;$(ProjectDir)ext\font;$(ProjectDir)ext\font\config;$(ProjectDir)ext\imgui;$(ProjectDir)ext\imgui\include;$(ProjectDir)ext\Clipper2Lib\include;$(ProjectDir)..\..\projects\shared;$(ProjectDir)..\..\vendors;$(ProjectDir)..\..\vendors\FreeType\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\vendors\FreeType\lib\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalManifestFiles>$(ProjectDir)app.manifest</AdditionalManifestFiles>
+    </Link>
+    <MASM />
+  
+</ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;NCONSOLE;_CRT_SECURE_NO_WARNINGS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <AdditionalOptions>/FS /FI"$(ProjectDir)force_inline.h" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)src\features;$(ProjectDir)ext;$(ProjectDir);$(ProjectDir)ext\zstd;$(ProjectDir)ext\blake3;$(ProjectDir)ext\xxhash;$(ProjectDir)ext\json;$(ProjectDir)ext\dicons;$(ProjectDir)ext\font;$(ProjectDir)ext\font\config;$(ProjectDir)ext\imgui;$(ProjectDir)ext\imgui\include;$(ProjectDir)ext\Clipper2Lib\include;$(ProjectDir)..\..\projects\shared;$(ProjectDir)..\..\vendors;$(ProjectDir)..\..\vendors\FreeType\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\vendors\FreeType\lib\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalManifestFiles>$(ProjectDir)app.manifest</AdditionalManifestFiles>
+    </Link>
+    <MASM />
+  
+</ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

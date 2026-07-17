@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="projects">
+      <UniqueIdentifier>{2c27e17d-68db-491a-9c40-655274799c84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\menu">
+      <UniqueIdentifier>{04ac9153-84f6-47f5-bf67-1f5cbdcf2bde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\shared">
+      <UniqueIdentifier>{e941d1ef-7fb5-4ff2-a858-78a1f7302337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\shared\ImGui">
+      <UniqueIdentifier>{535709ca-b440-4dff-b605-232c4dbc4f56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\shared\ImGui\addons">
+      <UniqueIdentifier>{9c145962-b2ef-4672-8450-3f7f5767d91d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\shared\ImGui\backends">
+      <UniqueIdentifier>{39e66dee-7b1a-48bc-a1c9-9cced148c075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\shared\ImGui\misc">
+      <UniqueIdentifier>{9af80cf6-1e0e-4d88-897f-cdbe092199dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\shared\Resources">
+      <UniqueIdentifier>{56460e4c-57b2-4c3a-80f3-65b59fa85af1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\shared\Resources\Fonts">
+      <UniqueIdentifier>{79217ff9-1e0d-442f-9029-c3f6d9682a88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\shared\Resources\Textures">
+      <UniqueIdentifier>{08151dfd-f5eb-45ca-90c7-14c2e5398e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\shared\Resources\Textures\loader">
+      <UniqueIdentifier>{1959d64b-087a-49ca-90b9-a924bbd60e13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\shared\Resources\Textures\menu">
+      <UniqueIdentifier>{fc9584a9-87af-43c4-b5eb-2349cdefda4a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Menu.cpp">
+      <Filter>projects\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>projects\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\Direct3D11.cpp">
+      <Filter>projects\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\Window.cpp">
+      <Filter>projects\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ImGui\imgui.cpp">
+      <Filter>projects\shared\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ImGui\imgui_demo.cpp">
+      <Filter>projects\shared\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ImGui\imgui_draw.cpp">
+      <Filter>projects\shared\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ImGui\imgui_tables.cpp">
+      <Filter>projects\shared\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ImGui\imgui_widgets.cpp">
+      <Filter>projects\shared\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ImGui\addons\imgui_addons.cpp">
+      <Filter>projects\shared\ImGui\addons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ImGui\backends\imgui_impl_dx11.cpp">
+      <Filter>projects\shared\ImGui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ImGui\backends\imgui_impl_win32.cpp">
+      <Filter>projects\shared\ImGui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\ImGui\misc\imgui_freetype.cpp">
+      <Filter>projects\shared\ImGui\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\Console.cpp">
+      <Filter>projects\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\Application.cpp">
+      <Filter>projects\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\Texture.cpp">
+      <Filter>projects\shared</Filter>
+    </ClCompile>
+    <ClCompile Include="LanguageDefinitions.cpp">
+      <Filter>projects\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="TextEditor.cpp">
+      <Filter>projects\menu</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Menu.h">
+      <Filter>projects\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Direct3D11.h">
+      <Filter>projects\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Window.h">
+      <Filter>projects\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\ImGui\imconfig.h">
+      <Filter>projects\shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\ImGui\imgui.h">
+      <Filter>projects\shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\ImGui\imgui_internal.h">
+      <Filter>projects\shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\ImGui\imstb_rectpack.h">
+      <Filter>projects\shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\ImGui\imstb_textedit.h">
+      <Filter>projects\shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\ImGui\imstb_truetype.h">
+      <Filter>projects\shared\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\ImGui\addons\imgui_addons.h">
+      <Filter>projects\shared\ImGui\addons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\ImGui\backends\imgui_impl_dx11.h">
+      <Filter>projects\shared\ImGui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\ImGui\backends\imgui_impl_win32.h">
+      <Filter>projects\shared\ImGui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\ImGui\misc\imgui_freetype.h">
+      <Filter>projects\shared\ImGui\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Console.h">
+      <Filter>projects\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Application.h">
+      <Filter>projects\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Texture.h">
+      <Filter>projects\shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\fonts\font_montserrat_medium.h">
+      <Filter>projects\shared\Resources\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_running.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_code.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_eye.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_misc.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_palette.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_settings.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_target.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_click.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_clock.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_crime.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_cursor.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_evil.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_globe.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_knife.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_location.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_objects.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_pulse.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_verified.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_wrench.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\fonts\font_exo2_medium.h">
+      <Filter>projects\shared\Resources\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\fonts\font_sf_pro_display_medium.h">
+      <Filter>projects\shared\Resources\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\fonts\font_inter_medium.h">
+      <Filter>projects\shared\Resources\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\fonts\font_poppins_medium.h">
+      <Filter>projects\shared\Resources\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\fonts\font_ubuntu_medium.h">
+      <Filter>projects\shared\Resources\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\fonts\font_ubuntu_regular.h">
+      <Filter>projects\shared\Resources\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\fonts\font_inter_semibold.h">
+      <Filter>projects\shared\Resources\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="TextEditor.h">
+      <Filter>projects\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\fonts\font_cascadia_mono_pl_regular.h">
+      <Filter>projects\shared\Resources\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_clear.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_open.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_play.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\Resources\textures\menu\image_save.h">
+      <Filter>projects\shared\Resources\Textures\menu</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
