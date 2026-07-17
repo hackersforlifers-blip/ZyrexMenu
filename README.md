@@ -1,6 +1,6 @@
 # Zyrex Menu
 
-Roblox external menu built with C++20, ImGui, and Direct3D 11.
+External menu built with C++20, ImGui, and Direct3D 11.
 
 ## Pre-built Binary
 
